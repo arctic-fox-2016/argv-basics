@@ -24,3 +24,11 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
+
+let kalimat = ""
+
+process.argv.forEach((val,index,array)=> {
+  //console.log(`${index} : ${val}`);
+  if(index>1) kalimat+=(`${val} `);
+});
+console.log(convert(kalimat))
