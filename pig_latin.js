@@ -24,3 +24,13 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
+process.argv.forEach((val, index, array) => {
+  // console.log(`${index}: ${val}`);
+  // console.log(convert(`${val}`));
+  // console.log(array.pop([0,2]))
+});
+let slice_1_2 = process.argv.slice(2,4)
+let result = slice_1_2.toString().replace(","," ")
+console.log(result)
+
+console.log(convert(result))
