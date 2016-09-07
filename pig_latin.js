@@ -23,4 +23,24 @@ let convert = (sentence) => {
   return result.join(" ")
 }
 
+let kata = []
+let hasil = ""
+
+process.argv.forEach((val, index, array) => {
+ // console.log(`${index}: ${val}`);
+
+  if (index > 1) {
+    kata.push(val)
+  }
+})
+
+for (var i = 0; i < kata.length; i++) {
+  hasil += convert(kata[i]) + " "
+}
+
+console.log("\n\n\n-----------------------")
+console.log(hasil)
+console.log("-----------------------\n\n\n")
+
+
 // Your CLI code here
