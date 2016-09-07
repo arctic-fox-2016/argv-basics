@@ -20,7 +20,27 @@ let convert = (sentence) => {
     result[i] = pigLatin(words[i])
   }
 
-  return result.join(" ")
+  return result.join("")
 }
 
-// Your CLI code here
+// let kata =''
+// console.log(kata +=`${word}`);
+
+//   let nama = ""
+  let kata = ""
+// // Your CLI code here
+
+// process.argv.forEach((val, index, array) =>  {
+//   console.log(`${index}: ${val}`);
+//   if(index > 1){
+//     console.log(nama += `${val}`);
+//   }
+// });
+
+process.argv.forEach((val, index, array) =>  {
+
+  if(index > 1){
+  (kata += `${val}`);
+  }
+});
+ console.log(convert(kata));
