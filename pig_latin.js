@@ -31,6 +31,6 @@ let convert = (sentence) => {
 
 console.log("\n");
 for(let idx = 2; idx < process.argv.length; idx++){
-  console.log(`Param #${idx-1}: ${process.argv[idx]}`)
+  console.log(`Param #${idx-1}: ${pigLatin(process.argv[idx])}`)
 }
 console.log("\n");
