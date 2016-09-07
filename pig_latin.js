@@ -24,3 +24,13 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
+
+/*process.argv.forEach((val, index, array) => {
+  console.log(`${index}: ${val}`)
+});*/
+
+console.log("\n");
+for(let idx = 2; idx < process.argv.length; idx++){
+  console.log(`Param #${idx-1}: ${pigLatin(process.argv[idx])}`)
+}
+console.log("\n");
