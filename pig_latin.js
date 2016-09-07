@@ -24,3 +24,10 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
+let temp_string = ""
+process.argv.forEach((val, index) => {
+  if (index > 1)
+   temp_string += val + " "
+})
+
+console.log(convert(temp_string))
